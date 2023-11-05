@@ -1,5 +1,6 @@
 package cl.desafiolatam.monstercreator.view.monsteravatars
 
+
 import android.annotation.SuppressLint
 import android.graphics.BitmapFactory
 import android.graphics.drawable.BitmapDrawable
@@ -9,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import cl.desafiolatam.monstercreator.R
+import cl.desafiolatam.monstercreator.model.Monster
 import cl.desafiolatam.monstercreator.model.MonsterImage
 
 /**
@@ -31,6 +33,8 @@ class MonsterAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(monsters[position])
     }
+
+
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView),
         View.OnClickListener {
